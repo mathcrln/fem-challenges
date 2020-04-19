@@ -16,7 +16,7 @@ body.dark {
     }
     .dark-mode-toggle {
         background: $darkThemeToggle;
-        justify-content: end;
+        justify-content: flex-end;
     }
     .dark-mode-toggle_circle {
         background: $dark-background;

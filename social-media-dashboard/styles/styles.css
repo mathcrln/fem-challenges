@@ -55,7 +55,7 @@ body.dark footer {
 }
 body.dark .dark-mode-toggle {
   background: linear-gradient(#378fe6, #3eda82);
-  justify-content: end;
+  justify-content: flex-end;
 }
 body.dark .dark-mode-toggle_circle {
   background: #1c2029;
@@ -101,15 +101,15 @@ header .container {
   justify-content: space-between;
   align-items: center;
   color: #afb2cb;
-  width: 10%;
 }
 
 .dark-mode-toggle {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60px;
-  height: 30px;
+  min-width: 60px;
+  min-height: 30px;
+  margin-left: 1rem;
   border-radius: 50px 50px;
   border: none;
   background: #afb2cb;

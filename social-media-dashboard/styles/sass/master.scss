@@ -45,13 +45,13 @@ header .container {
 .dark-mode-option {
     @include center-flex;
     color: $light-grey;
-    width: 10%;
 }
 
 .dark-mode-toggle {
     @include center-flex;
-    width: 60px;
-    height: 30px;
+    min-width: 60px;
+    min-height: 30px;
+    margin-left: 1rem;
     border-radius: 50px 50px;
     border: none;
     background: $light-grey;
