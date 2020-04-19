@@ -1,4 +1,4 @@
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .container {
     flex-direction: column;
     width: 90%;
@@ -59,6 +59,22 @@ body.dark .dark-mode-toggle {
 }
 body.dark .dark-mode-toggle_circle {
   background: #1c2029;
+}
+body.dark .dark-mode-option:hover p {
+  color: white;
+}
+body.dark .box:hover {
+  background: #333a56;
+}
+
+.box:hover {
+  background: #e1e3f0;
+  cursor: pointer;
+}
+
+.dark-mode-toggle:hover {
+  background: linear-gradient(#378fe6, #3eda82);
+  cursor: pointer;
 }
 
 * {
@@ -262,7 +278,20 @@ h2.section-title {
   font-size: 2.2rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1440px) {
+  .main-stats-grid {
+    flex-wrap: wrap;
+  }
+
+  .main-stats-box {
+    margin-top: 2rem;
+  }
+
+  .box {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 400px) {
   .container {
     flex-direction: column;
     width: 90%;

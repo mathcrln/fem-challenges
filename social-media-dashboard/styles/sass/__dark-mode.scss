@@ -21,4 +21,10 @@ body.dark {
     .dark-mode-toggle_circle {
         background: $dark-background;
     }
+    .dark-mode-option:hover p {
+        color: white;
+    }
+    .box:hover {
+        background: #333a56;
+    }
 }

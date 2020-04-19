@@ -1,0 +1,11 @@
+@media screen and (max-width: 1440px) {
+    .main-stats-grid {
+        flex-wrap: wrap;
+    }
+    .main-stats-box {
+        margin-top: 2rem;
+    }
+    .box {
+        width: 48%;
+    }
+}

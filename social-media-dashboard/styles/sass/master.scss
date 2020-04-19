@@ -1,6 +1,7 @@
 @import '_colors';
 @import '_mobile';
 @import '_dark-mode';
+@import '_hover';
 @mixin center-flex {
     display: flex;
     justify-content: space-between;
@@ -190,4 +191,5 @@ h2.section-title {
     }
 }
 
+@import '_tablet';
 @import '_mobile';
