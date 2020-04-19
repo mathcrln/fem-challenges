@@ -7,10 +7,10 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Frontend Mentor | Social Media Dashboard</title>
 
-    <title>Frontend Mentor | [Challenge Name Here]</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
         .attribution {
             font-size: 11px;
@@ -24,13 +24,205 @@
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <div id="site-identity">
+                <h1 class="title">Social Media Dashboard </h1>
+                <p class="followers-count">Total Followers: 23,004</p>
+            </div>
+            <div class="dark-mode-option">
+                <p>Dark Mode</p>
+                <div class="dark-mode-toggle">
+                    <div class="dark-mode-toggle_circle"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="main-content">
+        <div class="container">
+            <section class="main-stats-grid">
+                <div class="main-stats-box box">
+                    <div class="social-account facebook">
+                        <img src="./images/icon-facebook.svg" alt="Facebook Icon">
+                        <p class="username">@nathanf</p>
+                    </div>
+                    <div class="follower-count">
+                        <p class="number-of-followers">1987</p>
+                        <p>FOLLOWERS</p>
+                    </div>
+                    <div class="stat-growth--positive">
+                        <img src="./images/icon-up.svg" alt="Up Icon">
+                        <p>12 Today</p>
+                    </div>
+                </div>
+                <div class="main-stats-box box">
+                    <div class="social-account twitter">
+                        <img src="./images/icon-twitter.svg" alt="Twitter Icon">
+                        <p class="username">@nathanf</p>
+                    </div>
+                    <div class="follower-count">
+                        <p class="number-of-followers">1044</p>
+                        <p>FOLLOWERS</p>
+                    </div>
+                    <div class="stat-growth--positive">
+                        <img src="./images/icon-up.svg" alt="Up Icon">
+                        <p>99 Today</p>
+                    </div>
+                </div>
+                <div class="main-stats-box box">
+                    <div class="social-account instagram">
+                        <img src="./images/icon-instagram.svg" alt="instagram Icon">
+                        <p class="username">@realnathanf</p>
+                    </div>
+                    <div class="follower-count">
+                        <p class="number-of-followers">11k</p>
+                        <p>FOLLOWERS</p>
+                    </div>
+                    <div class="stat-growth--positive">
+                        <img src="./images/icon-up.svg" alt="Up Icon">
+                        <p>1099 Today</p>
+                    </div>
+                </div>
+                <div class="main-stats-box box">
+                    <div class="social-account YouTube">
+                        <img src="./images/icon-YouTube.svg" alt="YouTube Icon">
+                        <p class="username">Nathan F.</p>
+                    </div>
+                    <div class="follower-count">
+                        <p class="number-of-followers">8239</p>
+                        <p>Subscribers</p>
+                    </div>
+                    <div class="stat-growth--negative">
+                        <img src=" ./images/icon-down.svg " alt="down Icon ">
+                        <p>144 Today</p>
+                    </div>
+                </div>
+            </section>
+            <section class="overview-today">
+                <h2 class="section-title">Overview - Today</h2>
 
-    Social Media Dashboard Total Followers: 23,004 Dark Mode @nathanf 1987 Followers 12 Today @nathanf 1044 Followers 99 Today @realnathanf 11k Followers 1099 Today Nathan F. 8239 Subscribers 144 Today Overview - Today Page Views 87 3% Likes 52 2% Likes 5462
-    2257% Profile Views 52k 1375% Retweets 117 303% Likes 507 553% Likes 107 19% Total Views 1407 12%
+                <section class="overview-today-boxes">
+                    <div class="overview-single-box box">
+                        <div class="overview-header">
+                            <h3>Page Views</h3>
+                            <img src="./images/icon-facebook.svg " alt="Facebook Icon ">
+                        </div>
+                        <div class="overview-stats">
+                            <p class="stats-number">87</p>
+                            <div class="stat-growth--positive">
+                                <img src="./images/icon-up.svg " alt="Up Icon ">
+                                <p>3%</p>
+                            </div>
+                        </div>
 
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">@mathcrln</a>.
+                    </div>
+                    <div class="overview-single-box box">
+                        <div class="overview-header">
+                            <h3>Likes</h3>
+                            <img src="./images/icon-facebook.svg " alt="Facebook Icon ">
+                        </div>
+                        <div class="overview-stats">
+                            <p class="stats-number" (é</p>
+                                <div class="stat-growth--negative">
+                                    <img src="./images/icon-down.svg " alt="down Icon ">
+                                    <p>2%</p>
+                                </div>
+                        </div>
+
+                    </div>
+                    <div class="overview-single-box box">
+                        <div class="overview-header">
+                            <h3>Likes</h3>
+                            <img src="./images/icon-instagram.svg " alt="instagram Icon ">
+                        </div>
+                        <div class="overview-stats">
+                            <p class="stats-number">5462</p>
+                            <div class="stat-growth--positive">
+                                <img src="./images/icon-up.svg " alt="Up Icon ">
+                                <p>2257%</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="overview-single-box box">
+                        <div class="overview-header">
+                            <h3>Profile Views</h3>
+                            <img src="./images/icon-instagram.svg " alt="instagram Icon ">
+                        </div>
+                        <div class="overview-stats">
+                            <p class="stats-number">52k</p>
+                            <div class="stat-growth--positive">
+                                <img src="./images/icon-up.svg " alt="Up Icon ">
+                                <p>1375%</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="overview-single-box box">
+                        <div class="overview-header">
+                            <h3>Retweets</h3>
+                            <img src="./images/icon-twitter.svg " alt="twitter Icon ">
+                        </div>
+                        <div class="overview-stats">
+                            <p class="stats-number">117</p>
+                            <div class="stat-growth--positive">
+                                <img src="./images/icon-up.svg " alt="Up Icon ">
+                                <p>303%</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="overview-single-box box">
+                        <div class="overview-header">
+                            <h3>Likes</h3>
+                            <img src="./images/icon-twitter.svg " alt="twitter Icon ">
+                        </div>
+                        <div class="overview-stats">
+                            <p class="stats-number">87</p>
+                            <div class="stat-growth--positive">
+                                <img src="./images/icon-up.svg " alt="Up Icon ">
+                                <p>553%</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="overview-single-box box">
+                        <div class="overview-header">
+                            <h3>Likes</h3>
+                            <img src="./images/icon-youtube.svg " alt="YouTube Icon ">
+                        </div>
+                        <div class="overview-stats">
+                            <p class="stats-number">107</p>
+                            <div class="stat-growth--negative">
+                                <img src="./images/icon-down.svg " alt="down Icon ">
+                                <p>19%</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="overview-single-box box">
+                        <div class="overview-header">
+                            <h3>Total Views</h3>
+                            <img src="./images/icon-youtube.svg " alt="youtube Icon ">
+                        </div>
+                        <div class="overview-stats">
+                            <p class="stats-number">1407</p>
+                            <div class="stat-growth--negative">
+                                <img src="./images/icon-down.svg " alt="down Icon ">
+                                <p>12%</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </section>
+        </div>
     </div>
+
+    <footer class="attribution ">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge " target="_blank ">Frontend Mentor</a>. Coded by <a href="# ">@mathcrln</a>.
+    </footer>
 </body>
 
 </html>
