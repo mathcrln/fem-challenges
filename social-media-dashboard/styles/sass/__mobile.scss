@@ -1,0 +1,35 @@
+@import '_colors';
+@media screen and (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+    header {
+        background: none;
+        padding-top: 40px;
+        height: initial;
+        margin-bottom: 2rem;
+        #site-identity {
+            width: 100%;
+        }
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+    .dark-mode-option {
+        border-top: 1px solid $text-grey;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        width: 100%;
+    }
+    .main-stats-grid {
+        flex-direction: column;
+        position: static;
+        margin-bottom: 0;
+    }
+    .box {
+        width: 100%;
+        margin-bottom: 2rem;
+        padding: 1.6rem;
+    }
+}

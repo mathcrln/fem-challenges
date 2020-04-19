@@ -1,3 +1,66 @@
+@media screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  header {
+    background: none;
+    padding-top: 40px;
+    height: initial;
+    margin-bottom: 2rem;
+  }
+  header #site-identity {
+    width: 100%;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .dark-mode-option {
+    border-top: 1px solid #606470;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    width: 100%;
+  }
+
+  .main-stats-grid {
+    flex-direction: column;
+    position: static;
+    margin-bottom: 0;
+  }
+
+  .box {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 1.6rem;
+  }
+}
+body.dark {
+  background: #1c2029;
+}
+body.dark header {
+  background: #20222f;
+}
+body.dark .title,
+body.dark .stats-number,
+body.dark .follower-count {
+  color: white;
+}
+body.dark .box {
+  background: #252b43;
+}
+body.dark footer {
+  color: white;
+}
+body.dark .dark-mode-toggle {
+  background: linear-gradient(#378fe6, #3eda82);
+  justify-content: end;
+}
+body.dark .dark-mode-toggle_circle {
+  background: #1c2029;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -50,14 +113,16 @@ header .container {
   border-radius: 50px 50px;
   border: none;
   background: #afb2cb;
+  box-sizing: border-box;
 }
 
 .dark-mode-toggle_circle {
   height: 25px;
   width: 25px;
-  margin: 2px;
+  margin: 3px;
   background: white;
   border-radius: 50px 50px;
+  box-sizing: border-box;
 }
 
 .main-stats-grid {
@@ -87,14 +152,22 @@ header .container {
   border-top: 4px deepskyblue solid;
   height: 250px;
   flex-direction: column;
-  width: 22%;
 }
 .main-stats-box:nth-child(2) {
   border-top-color: #1ca0f2;
 }
 .main-stats-box:nth-child(3) {
-  border-top-color: #FDC468;
-  border-radius: 5px;
+  position: relative;
+  border-top-color: #f0f2fa;
+}
+.main-stats-box:nth-child(3)::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  background: linear-gradient(#fdc468, #df4996);
+  height: 5px;
+  border-radius: 5px 5px 0 0;
 }
 .main-stats-box:nth-child(4) {
   border-top-color: #c4032a;
@@ -187,6 +260,45 @@ h2.section-title {
 .overview-stats .stats-number {
   font-weight: 700;
   font-size: 2.2rem;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  header {
+    background: none;
+    padding-top: 40px;
+    height: initial;
+    margin-bottom: 2rem;
+  }
+  header #site-identity {
+    width: 100%;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .dark-mode-option {
+    border-top: 1px solid #606470;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    width: 100%;
+  }
+
+  .main-stats-grid {
+    flex-direction: column;
+    position: static;
+    margin-bottom: 0;
+  }
+
+  .box {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 1.6rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
