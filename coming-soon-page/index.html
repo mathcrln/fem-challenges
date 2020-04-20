@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Frontend Mentor | Ping coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1><img src="./assets/images/logo.svg" alt="Ping Logo"></h1>
+        </header>
+
+        <div class="b-message">
+            <h2 class="b-message__title">We are launching <span class="bold">soon!</span></h2>
+            <p class="b-message__subtitle">Subscribe and get notified</p>
+        </div>
+        <div class="b-subscription-form">
+            <form onsubmit="subscribe()" action="">
+                <input name="email" id="email" class="subscription-form__email" placeholder="Your email adress...">
+                <p class="subscription-error" hidden="true">test</p>
+            </form>
+            <button onClick="subscribe();" type="submit" class="Subscription-form__submit button-cta">Notify Me</button>
+
+        </div>
+
+        <div class="preview-image">
+            <img src="./assets/images/illustration-dashboard.png" alt="Preview Image">
+        </div>
+
+        <footer>
+            <div class="b-social-icons">
+                <span class="i-social-icon--facebook icon-button"><i class="fab fa-facebook-f"></i></span>
+                <span class="i-social-icon--twitter icon-button"><i class="fab fa-twitter"></i></span>
+                <span class="i-social-icon--instagram icon-button"><i class="fab fa-instagram"></i></span>
+            </div>
+            <p class="copyright">© Copyright Ping. All rights reserved.</p>
+            <p class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://mathcrln.com">@mathcrln</a>.
+            </p>
+        </footer>
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/a747116bb7.js" crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+    @media screen and (min-width: 700px) {
+        .container {
+            width: 40rem;
+        }
+        .b-subscription-form {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: space-between;
+            form {
+                width: 72%;
+            }
+            .subscription-form__email {
+                width: 100%;
+            }
+            .button-cta {
+                width: 25%;
+            }
+        }
+    }

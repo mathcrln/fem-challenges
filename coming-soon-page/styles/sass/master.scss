@@ -1,0 +1,103 @@
+@import './_base';
+@import './_fonts';
+@import './_colors';
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.b-message {
+    margin: 2.5rem 0;
+    font-size: 1.1rem;
+}
+
+.b-message__title {
+    font-weight: 200;
+    color: $gray;
+}
+
+.b-message__subtitle {
+    font-size: 1rem;
+    font-weight: 200;
+    color: $veryDarkBlue;
+}
+
+.bold {
+    font-weight: 700;
+    color: black;
+}
+
+// Subscription form
+.b-subscription-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.b-subscription-form form {
+    width: 100%;
+}
+
+.subscription-form__email {
+    border: 0.1rem solid $paleBlue;
+    border-radius: 10rem;
+    box-sizing: border-box;
+    color: $paleBlue;
+    font-size: 1rem;
+    padding: 0.9rem 2rem;
+    width: 100%;
+}
+
+.subscription-error {
+    color: $lightRed;
+}
+
+.button-cta {
+    border: none;
+    border-radius: 10rem;
+    box-shadow: 0px 1px 5px 0px $blue;
+    background: $blue;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    padding: 0.9rem 0;
+    width: 100%;
+}
+
+// Image preview
+.preview-image img {
+    max-width: 100%;
+    margin: 3rem 0;
+}
+
+// Footer & Copyright
+.b-social-icons {
+    color: $blue;
+    display: flex;
+    justify-content: center;
+    .icon-button {
+        border: 0.1rem solid $paleBlue;
+        padding: 0.9rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10rem 10rem;
+        margin: 0.5rem;
+    }
+}
+
+.copyright,
+.attribution {
+    color: $gray;
+    font-weight: 200;
+    font-size: 0.7rem;
+}
+
+// Responsive
+@import './breakpoints/_desktop.scss';

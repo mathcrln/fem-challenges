@@ -1,0 +1,126 @@
+h1,
+h2,
+p,
+input,
+button {
+  font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.b-message {
+  margin: 2.5rem 0;
+  font-size: 1.1rem;
+}
+
+.b-message__title {
+  font-weight: 200;
+  color: #969696;
+}
+
+.b-message__subtitle {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #151f29;
+}
+
+.bold {
+  font-weight: 700;
+  color: black;
+}
+
+.b-subscription-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.b-subscription-form form {
+  width: 100%;
+}
+
+.subscription-form__email {
+  border: 0.1rem solid #c2d3ff;
+  border-radius: 10rem;
+  box-sizing: border-box;
+  color: #c2d3ff;
+  font-size: 1rem;
+  padding: 0.9rem 2rem;
+  width: 100%;
+}
+
+.subscription-error {
+  color: #ff5263;
+}
+
+.button-cta {
+  border: none;
+  border-radius: 10rem;
+  box-shadow: 0px 1px 5px 0px #4f7df3;
+  background: #4f7df3;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  padding: 0.9rem 0;
+  width: 100%;
+}
+
+.preview-image img {
+  max-width: 100%;
+  margin: 3rem 0;
+}
+
+.b-social-icons {
+  color: #4f7df3;
+  display: flex;
+  justify-content: center;
+}
+.b-social-icons .icon-button {
+  border: 0.1rem solid #c2d3ff;
+  padding: 0.9rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rem 10rem;
+  margin: 0.5rem;
+}
+
+.copyright,
+.attribution {
+  color: #969696;
+  font-weight: 200;
+  font-size: 0.7rem;
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    width: 40rem;
+  }
+
+  .b-subscription-form {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .b-subscription-form form {
+    width: 72%;
+  }
+  .b-subscription-form .subscription-form__email {
+    width: 100%;
+  }
+  .b-subscription-form .button-cta {
+    width: 25%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
