@@ -30,15 +30,17 @@
 }
 
 // Subscription form
-.b-subscription-form {
+.b-subscription-form form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
-.b-subscription-form form {
+.b-subscription-form div {
     width: 100%;
+    padding: 0;
 }
 
 .subscription-form__email {
@@ -46,13 +48,26 @@
     border-radius: 10rem;
     box-sizing: border-box;
     color: $paleBlue;
-    font-size: 1rem;
+    font-size: 0.7rem;
     padding: 0.9rem 2rem;
     width: 100%;
 }
 
+.subscription-message {
+    font-style: italic;
+    font-size: 0.7rem;
+}
+
 .subscription-error {
     color: $lightRed;
+}
+
+.border-red {
+    border-color: 0.1rem solid $lightRed;
+}
+
+.subscription-validation {
+    color: $green;
 }
 
 .button-cta {
@@ -89,6 +104,10 @@
         align-items: center;
         border-radius: 10rem 10rem;
         margin: 0.5rem;
+        &:hover {
+            background: $blue;
+            color: white;
+        }
     }
 }
 

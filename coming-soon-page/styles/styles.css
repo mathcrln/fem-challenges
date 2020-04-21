@@ -34,15 +34,17 @@ button {
   color: black;
 }
 
-.b-subscription-form {
+.b-subscription-form form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
-.b-subscription-form form {
+.b-subscription-form div {
   width: 100%;
+  padding: 0;
 }
 
 .subscription-form__email {
@@ -50,13 +52,26 @@ button {
   border-radius: 10rem;
   box-sizing: border-box;
   color: #c2d3ff;
-  font-size: 1rem;
+  font-size: 0.7rem;
   padding: 0.9rem 2rem;
   width: 100%;
 }
 
+.subscription-message {
+  font-style: italic;
+  font-size: 0.7rem;
+}
+
 .subscription-error {
   color: #ff5263;
+}
+
+.border-red {
+  border-color: 0.1rem solid #ff5263;
+}
+
+.subscription-validation {
+  color: #52d278;
 }
 
 .button-cta {
@@ -93,6 +108,10 @@ button {
   border-radius: 10rem 10rem;
   margin: 0.5rem;
 }
+.b-social-icons .icon-button:hover {
+  background: #4f7df3;
+  color: white;
+}
 
 .copyright,
 .attribution {
@@ -106,19 +125,23 @@ button {
     width: 40rem;
   }
 
-  .b-subscription-form {
+  .b-subscription-form form {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
   }
-  .b-subscription-form form {
+  .b-subscription-form form .input-and-error-state {
     width: 72%;
   }
-  .b-subscription-form .subscription-form__email {
+  .b-subscription-form form .subscription-form__email {
     width: 100%;
   }
-  .b-subscription-form .button-cta {
+  .b-subscription-form form .subscription-message {
+    text-align: left;
+    margin-left: 3rem;
+  }
+  .b-subscription-form form .button-cta {
     width: 25%;
   }
 }

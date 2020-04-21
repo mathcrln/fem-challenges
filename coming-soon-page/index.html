@@ -34,12 +34,13 @@
             <p class="b-message__subtitle">Subscribe and get notified</p>
         </div>
         <div class="b-subscription-form">
-            <form onsubmit="subscribe()" action="">
-                <input name="email" id="email" class="subscription-form__email" placeholder="Your email adress...">
-                <p class="subscription-error" hidden="true">test</p>
+            <form name="newsletter-form" novalidate>
+                <div class="input-and-error-state">
+                    <input name="email" id="email" class="subscription-form__email" placeholder="Your email adress...">
+                    <p class="subscription-message" id="subscription-message" hidden="true">Whoops! It looks like you forgot to add your email</p>
+                </div>
+                <button type="submit" class="subscription-form__submit button-cta">Notify Me</button>
             </form>
-            <button onClick="subscribe();" type="submit" class="Subscription-form__submit button-cta">Notify Me</button>
-
         </div>
 
         <div class="preview-image">

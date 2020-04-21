@@ -2,16 +2,20 @@
         .container {
             width: 40rem;
         }
-        .b-subscription-form {
+        .b-subscription-form form {
             display: flex;
             flex-direction: row;
             align-items: baseline;
             justify-content: space-between;
-            form {
+            .input-and-error-state {
                 width: 72%;
             }
             .subscription-form__email {
                 width: 100%;
+            }
+            .subscription-message {
+                text-align: left;
+                margin-left: 3rem;
             }
             .button-cta {
                 width: 25%;
