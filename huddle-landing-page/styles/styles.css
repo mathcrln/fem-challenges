@@ -1,0 +1,84 @@
+html,
+body {
+  font-size: 16px;
+  height: 100%;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background: #7155bb url(../../assets/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+}
+@media screen and (min-width: 375px) {
+  body {
+    background: #7155bb url(../../assets/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: left top;
+  }
+}
+body {
+  color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: left top;
+}
+
+h2 {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  background: #7155bb;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 84%;
+  margin: auto;
+}
+
+p.introductory-p {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+
+.main-image {
+  max-width: 100%;
+}
+
+.button-cta {
+  border: none;
+  border-radius: 10rem;
+  background: #FFFFFF;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  padding: 0.9rem 5rem;
+  color: #674baf;
+  margin-bottom: 2rem;
+}
+
+.b-social-icons {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+.b-social-icons .icon-button {
+  border: 0.1rem solid #FFFFFF;
+  padding: 0.9rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rem 10rem;
+  margin: 0.5rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
