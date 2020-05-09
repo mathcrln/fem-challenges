@@ -1,28 +1,28 @@
 @import './_base';
-@import './_mobile-first';
-@import './_desktop';
+
 body {
     color: $white;
-    // background: rgba(113, 85, 187);
+    background: rgba(113, 85, 187) url(../../assets/images/bg-desktop.svg);
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: left top;
 }
 
+#logo img{
+        max-width: 50%;
+    }
+
+
 h2 {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 500;
-    background: rgba(113, 85, 187);
 }
 
+
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 84%;
+    width: 85%;
     margin: auto;
+    margin-top: 2rem;
 }
 
 p.introductory-p {
@@ -30,22 +30,34 @@ p.introductory-p {
     font-weight: 400;
 }
 
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 300;
+}
+
 .main-image {
     max-width: 100%;
+    margin-bottom: 2.5rem;
 }
 
 .button-cta {
     border: none;
     border-radius: 10rem;
-    // box-shadow: 0px 1px 5px 0px $white;
+    box-shadow: 0px 3px 5px 0px #000000;
     background: $white;
     color: white;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 0.8rem;
+    font-weight: 300;
     margin-top: 1rem;
-    padding: 0.9rem 5rem;
+    padding: 0.6rem 4rem;
     color: $violet;
     margin-bottom: 2rem;
+    
+
 }
 
 // Footer & Copyright
@@ -65,3 +77,5 @@ p.introductory-p {
         margin: 0.5rem;
     }
 }
+@import './_mobile-first';
+@import './_desktop';

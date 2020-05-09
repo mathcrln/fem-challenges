@@ -4,42 +4,27 @@ body {
   height: 100%;
 }
 
-@media screen and (max-width: 375px) {
-  body {
-    background: #7155bb url(../../assets/images/bg-mobile.svg);
-    background-repeat: no-repeat;
-    background-position: left top;
-  }
-}
-@media screen and (min-width: 375px) {
-  body {
-    background: #7155bb url(../../assets/images/bg-desktop.svg);
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position: left top;
-  }
-}
 body {
   color: #FFFFFF;
+  background: #7155bb url(../../assets/images/bg-desktop.svg);
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: left top;
 }
 
+#logo img {
+  max-width: 50%;
+}
+
 h2 {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
-  background: #7155bb;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 84%;
+  width: 85%;
   margin: auto;
+  margin-top: 2rem;
 }
 
 p.introductory-p {
@@ -47,19 +32,30 @@ p.introductory-p {
   font-weight: 400;
 }
 
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 300;
+}
+
 .main-image {
   max-width: 100%;
+  margin-bottom: 2.5rem;
 }
 
 .button-cta {
   border: none;
   border-radius: 10rem;
+  box-shadow: 0px 3px 5px 0px #000000;
   background: #FFFFFF;
   color: white;
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 0.8rem;
+  font-weight: 300;
   margin-top: 1rem;
-  padding: 0.9rem 5rem;
+  padding: 0.6rem 4rem;
   color: #674baf;
   margin-bottom: 2rem;
 }
@@ -79,6 +75,57 @@ p.introductory-p {
   align-items: center;
   border-radius: 10rem 10rem;
   margin: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background: #7155bb url(../../assets/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+}
+@media screen and (min-width: 1000px) {
+  body {
+    background: #7155bb url(../../assets/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: left top;
+  }
+
+  #logo img {
+    max-width: 15%;
+  }
+
+  .container {
+    width: 85%;
+  }
+  .container .main-content {
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .container .main-content .main-informations {
+    display: flex;
+    flex-direction: column;
+    width: 42%;
+    max-width: 50%;
+    margin: 4rem 0 0 4rem;
+  }
+  .container .main-content .main-informations h2 {
+    font-size: 2.3rem;
+  }
+  .container .main-content .main-image {
+    width: 100%;
+  }
+  .container .main-content .button-cta {
+    width: 10rem;
+    padding: 0.9rem 3rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
