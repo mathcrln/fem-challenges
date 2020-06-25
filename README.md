@@ -4,9 +4,14 @@ Suite of responsive front-end challenges from [frontendmentor.io](https://www.fr
 
 ## List of challenges
 
+### Challenge 4 • Huddle Landing Page • [See Live!](https://mathcrln.github.io/fem-challenges/huddle-onepage/)
+**[June 24, 2020]** One page website for a brand. Using Flexbox and SASS. [Read Code](https://github.com/mathcrln/fem-challenges/tree/master/huddle-onepage).
+
+![Huddle One Page](https://github.com/mathcrln/fem-challenges/blob/master/huddle-onepage/assets/design/desktop-preview.jpg)
+---
 
 ### Challenge 3 • Huddle Landing Page • [See Live!](https://mathcrln.github.io/fem-challenges/huddle-landing-page/)
-**[May 09, 2019]** Responsive and very minimalistic landing page for a brand. [Read Code](https://github.com/mathcrln/fem-challenges/tree/master/huddle-landing-page).
+**[May 09, 2020]** Responsive and very minimalistic landing page for a brand. [Read Code](https://github.com/mathcrln/fem-challenges/tree/master/huddle-landing-page).
 
 ![Huddle Landing Page](https://github.com/mathcrln/fem-challenges/blob/master/huddle-landing-page/assets/design/desktop-preview.jpg)
 ---
