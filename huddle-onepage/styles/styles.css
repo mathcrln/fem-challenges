@@ -56,7 +56,7 @@ img {
 /* -------------- HEADER --------------*/
 header {
   background: url("/assets/images/bg-hero-mobile.svg") #ebfbff;
-  padding-top: 1rem;
+  padding: 1rem 0;
 }
 @media screen and (min-width: 900px) {
   header {

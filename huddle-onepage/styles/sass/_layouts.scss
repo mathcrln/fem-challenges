@@ -3,7 +3,7 @@
 /* -------------- HEADER --------------*/
 header {
     background: url("/assets/images/bg-hero-mobile.svg") $lightCyan;
-    padding-top: 1rem;
+    padding: 1rem 0;
 
     @include query-desktops {
         background: url("/assets/images/bg-hero-desktop.svg") $lightCyan;
