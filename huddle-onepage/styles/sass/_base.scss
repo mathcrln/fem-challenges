@@ -1,0 +1,62 @@
+@import './media-queries';
+/* --------- COLORS --------- */
+$pink: hsl(322, 100%, 66%);
+$lightCyan: hsl(193, 100%, 96%);
+$darkCyan: hsl(192, 100%, 9%);
+$grayish: hsl(208, 11%, 55%);
+$light: #FFFFFF;
+
+/* --------- SIZES --------- */
+$mobile: 600px;
+$desktop: 1440px;
+
+/* --------- FONTS Sizes & Families --------- */
+html,
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+
+    font: {
+        family: "Open Sans", Arial, Helvetica, sans-serif;
+        size: 18px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: $darkCyan;
+    }
+
+    h1 {
+        font-size: 180%; // 2.3rem
+    }
+
+    h2 {
+        font-size: 158%;
+
+        @include query-mobile {
+            font-size: 1.3rem;
+        }
+    }
+
+    h3 {
+        font-size: 140%;
+
+        @include query-mobile {
+            font-size: 100%;
+        }
+    }
+
+    p {
+        @include query-mobile {
+            font-size: 0.8rem;
+        }
+    }
+
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
