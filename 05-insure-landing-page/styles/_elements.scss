@@ -1,0 +1,103 @@
+.logo {
+    max-width: 100%;
+}
+
+// #main-logo {
+//     max-width: 30%;
+//     background: red;
+// }
+
+.heading {
+    font-family: $heading-font;
+}
+
+.button {
+    background: none;
+    border-style: solid;
+    border-width: 0.1rem;
+    padding: 0.6rem 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.main-cta {
+    border-color: black;
+}
+
+.banner.find-out-more {
+    background: url('../assets/images/bg-pattern-how-we-work-desktop.svg') $dark-violet no-repeat;
+    background-size: contain;
+    background-position: right;
+    color: white;
+    padding: 4rem 5rem;
+    margin: 7rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .heading {
+        font-size: 4rem;
+        line-height: 3.8rem;
+        flex-grow: 1;
+
+    }
+
+    .secondary-button {
+        font-size: 1.3rem;
+    }
+
+    .secondary-button:hover {
+        background: white;
+        color: black;
+    }
+
+    @include query-mobile {
+        flex-direction: column;
+        background: url('../assets/images/bg-pattern-how-we-work-mobile.svg') $dark-violet no-repeat;
+        background-size: contain;
+        background-position: right;
+        padding: 4rem 4rem;
+
+        .heading {
+            font-size: 2.5rem;
+            line-height: 3rem;
+
+        }
+
+        .secondary-button {
+            margin-top: 2rem;
+        }
+    }
+
+}
+
+.secondary-button {
+    border-color: white;
+    color: white;
+}
+
+.main-cta {
+    color: $very-dark-violet;
+}
+
+
+
+// div.footer-social-icons {}
+.social-icon {
+    color: $dark-grayish-violet;
+    margin-left: 0.5rem;
+}
+
+.footer-nav-title {
+    text-transform: uppercase;
+    color: $dark-grayish-violet;
+    margin-bottom: 1.7rem;
+}
+
+hr {
+    height: 1px;
+    background-color: gray;
+    border: none;
+    margin: 1rem 0;
+}

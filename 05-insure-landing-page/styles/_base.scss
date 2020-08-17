@@ -1,0 +1,35 @@
+@import './media-queries';
+/* --------- COLORS --------- */
+$dark-violet: hsl(256, 26%, 20%);
+$grayish-blue: hsl(216, 30%, 68%);
+$very-dark-violet: hsl(270, 9%, 17%);
+$dark-grayish-violet: hsl(273, 4%, 51%);
+$very-light-gray: hsl(0, 0%, 98%);
+
+
+/* --------- SIZES --------- */
+$mobile: 600px;
+$desktop: 1440px;
+
+/* --------- FONTS Sizes & Families --------- */
+$heading-font: "DM Serif Display",
+Arial,
+Helvetica,
+sans-serif;
+$body-font: Karla,
+Arial,
+Helvetica,
+sans-serif;
+
+html,
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+
+    font: {
+        family: $body-font;
+        size: 16px;
+    }
+}

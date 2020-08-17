@@ -1,0 +1,221 @@
+body {
+    @include query-mobile {
+        text-align: center;
+    }
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    box-sizing: border-box;
+
+}
+
+header #main-logo {
+    flex-grow: 1;
+}
+
+#showcase-cover {
+    background: url('../assets/images/bg-pattern-intro-left-desktop.svg') bottom -200px left 0 no-repeat, url('../assets/images/bg-pattern-intro-right-desktop.svg') $dark-violet no-repeat top right;
+    // background-position: top right;   
+    color: white;
+    padding: 4rem 0;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        @include query-mobile {
+            flex-direction: column-reverse;
+            width: 100%;
+            justify-content: flex-start;
+            // align-items: flex-start;
+            padding: 0;
+
+            .heading {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.showcase-text {
+    margin-left: 0;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    .heading {
+        font-size: 5rem;
+        line-height: 5rem;
+        margin: 2rem 0;
+    }
+
+    .button {
+        margin-top: 2rem;
+    }
+
+    @include query-mobile {
+        margin: 0;
+    }
+}
+
+// .showcase-image {
+//     background: url('../../assets/images/image-intro-desktop.jpg') no-repeat;
+//     // background-size: 100%;
+//     width: 400px;
+//     height: 500px;
+//     bottom: -10rem;
+//     position: relative;
+// }
+
+
+
+/* ———————————— MAIN CONTENT ————————————*/
+#main-content {
+    background: url('../assets/images/bg-pattern-intro-left-desktop.svg') no-repeat;
+    background-position: top -300px left 0;
+
+    .container {
+        padding: 10rem 0 0 0;
+    }
+}
+
+.main-title {
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 4rem 0 7rem 0;
+    line-height: 5rem;
+
+    @include query-mobile {
+        font-size: 3rem;
+    }
+}
+
+
+.hr-before {
+    width: 10rem;
+    height: 0.1rem;
+    margin: 2rem 0;
+    background: gray;
+
+    // position: relative;
+    // top: 10px;
+    // left: 10px
+    @include query-mobile {
+        margin: auto;
+    }
+}
+
+.company-features {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .heading {
+        font-size: 1.9rem;
+        font-weight: 400;
+
+    }
+
+    @include query-mobile {
+        flex-direction: column;
+    }
+}
+
+.feature {
+    min-width: 20rem;
+    max-width: 23rem;
+
+    @include query-mobile {
+        margin-bottom: 4rem;
+    }
+}
+
+
+/* ———————————— FOOTER ———————————— */
+footer {
+    background: url('../assets/images/bg-pattern-footer-desktop.svg') $very-light-gray no-repeat;
+    padding: 2rem;
+
+    .container {
+        padding: 2rem 0;
+
+    }
+
+    @include query-mobile {
+        background: url('../assets/images/bg-pattern-footer-mobile.svg') $very-light-gray no-repeat;
+    }
+}
+
+#footer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    .logo img {
+        min-height: 1.3rem;
+    }
+
+    @include query-mobile {
+        flex-direction: column;
+    }
+}
+
+#footer-nav {
+    display: flex;
+    justify-content: flex-start;
+
+
+    a {
+        color: black;
+        line-height: 2rem;
+        color: $very-dark-violet;
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    a:hover,
+    a:active {
+        text-decoration: underline;
+    }
+
+    div {
+        width: 20rem;
+    }
+
+
+    @include query-mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+.footer-nav-title {
+    margin-top: 3rem;
+}
+
+
+.footer-social-icons {
+    font-size: 2rem;
+
+    @include query-mobile {
+        margin-top: 2rem;
+    }
+}
