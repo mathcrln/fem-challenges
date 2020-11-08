@@ -1,0 +1,155 @@
+/* ********* ********* ********* *********
+                COLORS
+   ********* ********* ********* **********/
+/* ********* ********* ********* *********
+                SIZES & FONTS
+   ********* ********* ********* **********/
+html,
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: #ff7a7a;
+  background-image: url("../images/bg-intro-mobile.png");
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+@media screen and (min-width: 900px) {
+  html,
+body {
+    background-image: url("../images/bg-intro-desktop.png");
+  }
+}
+
+/* ********* ********* ********* *********
+                CONTAINER
+   ********* ********* ********* **********/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+@media screen and (min-width: 900px) {
+  .container {
+    margin-top: 8rem;
+    flex-direction: row;
+    width: 80%;
+  }
+}
+
+#offer-description {
+  text-align: center;
+}
+@media screen and (min-width: 900px) {
+  #offer-description {
+    text-align: left;
+  }
+}
+
+/* ********* ********* ********* *********
+                    FOOTER
+   ********* ********* ********* **********/
+footer {
+  text-align: center;
+  color: white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  font-weight: 400;
+}
+footer a {
+  color: white;
+  text-decoration-line: none;
+}
+
+footer img.heart {
+  width: 20px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/* ********* ********* ********* *********
+                    FORM
+   ********* ********* ********* **********/
+@media screen and (min-width: 900px) {
+  #form-section {
+    min-width: 50%;
+    max-width: 55%;
+  }
+}
+
+#form {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0.1rem 0.2rem 0rem black;
+  text-align: center;
+  padding: 1rem;
+}
+@media screen and (min-width: 900px) {
+  #form {
+    padding: 1.3rem;
+  }
+}
+#form form {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+#form form input {
+  border-radius: 6px;
+  height: 2.8rem;
+  margin-bottom: 0.8rem;
+  border: 0.3px solid grey;
+  padding-left: 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* ********* ********* ********* *********
+                    BUTTONS
+   ********* ********* ********* **********/
+.call-to-action {
+  background: violet;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+  margin: 2rem;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+#main-cta {
+  margin: 2rem 0;
+  background: #6055a5;
+}
+
+#form-submission {
+  margin-top: 0;
+  background: #38cc8c;
+  text-transform: uppercase;
+  font-weight: 600;
+  box-shadow: #38cc8c;
+  margin-bottom: 0;
+}
+
+#disclosure {
+  color: #b9b6d3;
+  margin-top: 1.3rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+#disclosure a {
+  text-decoration-line: none;
+  color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */

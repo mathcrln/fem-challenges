@@ -1,0 +1,77 @@
+/* ********* ********* ********* *********
+                    FORM
+   ********* ********* ********* **********/
+
+#form-section{
+    @include query-desktops{
+        min-width: 50%;
+        max-width: 55%;
+    }
+}
+
+#form{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0.1rem 0.2rem 0rem black;
+    text-align: center;
+    padding: 1rem;
+    @include query-desktops{
+        padding: 1.3rem;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        box-sizing: border-box;
+        input{
+            border-radius: 6px;
+            height: 2.8rem;
+            margin-bottom: 0.8rem;
+            border: 0.3px solid grey;
+            padding-left: 1rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            // width: 90%;
+            // margin: auto;
+        }
+    }
+}
+
+/* ********* ********* ********* *********
+                    BUTTONS
+   ********* ********* ********* **********/
+.call-to-action{
+    background: violet;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    margin: 2rem;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+#main-cta{
+    margin: 2rem 0;
+    background: $blue;
+}
+
+#form-submission{
+    margin-top: 0;
+    background: $green;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: $green;
+    margin-bottom: 0;
+}
+
+#disclosure{
+    a{
+        text-decoration-line: none;
+        color: red;
+    }
+    color: $grayish-blue;
+    margin-top: 1.3rem;
+    font: {
+        size: 0.7rem;
+        weight: 600;
+    }
+}

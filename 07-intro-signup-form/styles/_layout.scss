@@ -1,0 +1,55 @@
+
+
+
+/* ********* ********* ********* *********
+                CONTAINER
+   ********* ********* ********* **********/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    @include query-desktops{
+        margin-top: 8rem;
+        flex-direction: row;
+        width: 80%;
+    }
+}
+
+#offer-description{
+
+    text-align: center;
+    @include query-desktops{
+        text-align: left;
+    }
+}
+
+
+/* ********* ********* ********* *********
+                    FOOTER
+   ********* ********* ********* **********/
+footer{
+    text-align: center;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;    
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    font-weight: 400;
+    a{
+        color: white;
+        text-decoration-line: none;
+    }
+}
+
+
+footer img.heart{
+    width: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+}
