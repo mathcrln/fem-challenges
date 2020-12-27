@@ -4,7 +4,25 @@ Suite of responsive front-end challenges from [frontendmentor.io](https://www.fr
 
 ## List of challenges
 
-### Challenge 4 • Huddle Landing Page • [See Live!](https://mathcrln.github.io/fem-challenges/04-huddle-onepage/)
+### Challenge 7 • Intro Sign Up Form • [See Live!](https://mathcrln.github.io/fem-challenges/07-intro-signup-form)
+**[November 11, 2020]** Simple Sign Up form including validation, with Flex and SASS. [Read Code](https://github.com/mathcrln/fem-challenges/tree/master/07-intro-signup-form).
+
+![Intro Sign Up Form](https://mathcrln.github.io/fem-challenges/07-intro-signup-form/design/desktop-preview.jpg)
+---
+
+### Challenge 6 • Fylo Landing Page • [See Live!](https://mathcrln.github.io/fem-challenges/06-fylo-landing-page)
+**[August 17, 2020]** Landing Page. Using Flexbox and SASS. [Read Code](https://github.com/mathcrln/fem-challenges/tree/master/06-fylo-landing-page).
+
+![Fylo Landing Page](https://mathcrln.github.io/fem-challenges/06-fylo-landing-page/design/desktop-preview.jpg)
+---
+
+### Challenge 5 • Insure Landing Page • [See Live!](https://mathcrln.github.io/fem-challenges/05-insure-landing-page)
+**[July 01, 2020]** One page website for a brand. Using Flexbox and SASS. [Read Code](https://github.com/mathcrln/fem-challenges/tree/master/05-insure-landing-page).
+
+![Insure Landing Page](https://mathcrln.github.io/fem-challenges/05-insure-landing-page/assets/design/desktop-preview.jpg)
+---
+
+### Challenge 4 • Huddle One Page • [See Live!](https://mathcrln.github.io/fem-challenges/04-huddle-onepage/)
 **[June 24, 2020]** One page website for a brand. Using Flexbox and SASS. [Read Code](https://github.com/mathcrln/fem-challenges/tree/master/04-huddle-onepage).
 
 ![Huddle One Page](https://mathcrln.github.io/fem-challenges/04-huddle-onepage/assets/design/desktop-preview.jpg)
