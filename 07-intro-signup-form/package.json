@@ -1,0 +1,7 @@
+{
+    "scripts": {
+        "sass:watch": "sass --watch ./styles/master.scss ./styles/styles.css",
+        "livereload": "browser-sync start --server --files 'styles/*.css'",
+        "serve" : "npm run sass:watch & npm run livereload"
+    }
+  }

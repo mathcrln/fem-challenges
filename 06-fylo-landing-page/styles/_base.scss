@@ -1,0 +1,31 @@
+// COLORS
+$white: #FFFFFF;
+$darkBlue: #1B2330;
+$lightBlue: #62E0D9;
+
+// FONTS
+$body-font: 'Open Sans', 'Courier New', Courier, monospace;
+$railway-font: 'Open Sans', 'Courier New', Courier, monospace;
+
+*{
+    box-sizing: border-box;
+}
+
+html,
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    background: $darkBlue;
+    color: $white;
+    font: {
+        family: $body-font;
+        size: 16px;
+    }
+}
+
+.heading{
+    font-family: $railway-font;
+    font-weight: 700;
+}

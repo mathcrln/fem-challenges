@@ -1,0 +1,29 @@
+.call-to-action{
+    background: hsl(176, 68%, 64%);
+    border: none;
+    border-radius: 50px;
+    color: $white;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1rem 5rem;
+}
+
+.logo{
+    max-width: 100%;
+    width: 10rem;
+}
+
+.menu-item{
+    list-style-type: none;
+
+    a{
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+#main-menu .menu-item{
+    font-family: Railway, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-left: 3rem;
+}
