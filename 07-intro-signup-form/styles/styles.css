@@ -152,6 +152,9 @@ form {
   box-sizing: border-box;
   letter-spacing: 0.25px;
 }
+.form-input:focus {
+  outline-color: #6055a5;
+}
 @media screen and (min-width: 900px) {
   .form-input {
     padding: 0.9375rem 2rem;
@@ -162,9 +165,10 @@ form {
 .form-control {
   position: relative;
   margin-bottom: 1rem;
+  color: #ff7a7a;
 }
 .form-control.error {
-  margin-bottom: 1.25rem;
+  margin-bottom: 2.5rem;
 }
 .form-control.error .form-input {
   border: 2px solid #ff7a7a;
@@ -191,7 +195,7 @@ form {
 .form-control small.error-message {
   position: absolute;
   right: 0px;
-  bottom: -6px;
+  bottom: -1.2rem;
   font-size: 0.6875rem;
   font-style: italic;
   display: none;

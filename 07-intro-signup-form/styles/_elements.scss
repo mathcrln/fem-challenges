@@ -47,6 +47,10 @@ form {
 	box-sizing: border-box;
 	letter-spacing: 0.25px;
 
+	&:focus {
+		outline-color: $blue;
+	}
+
 	@include query-desktops {
 		padding: 0.9375rem 2rem;
 		line-height: 1.625rem;
@@ -56,9 +60,10 @@ form {
 .form-control {
 	position: relative;
 	margin-bottom: 1rem;
+	color: $background;
 
 	&.error {
-		margin-bottom: 1.25rem;
+		margin-bottom: 2.5rem;
 		.form-input {
 			border: 2px solid $background;
 		}
@@ -85,7 +90,7 @@ form {
 .form-control small.error-message {
 	position: absolute;
 	right: 0px;
-	bottom: -6px;
+	bottom: -1.2rem;
 	font-size: 0.6875rem;
 	font-style: italic;
 	display: none;
