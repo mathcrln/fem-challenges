@@ -48,7 +48,7 @@ body {
 }
 @media screen and (min-width: 900px) {
   .container {
-    height: 89vh;
+    height: 100vh;
     flex-direction: row;
     width: 77.08%;
   }
@@ -66,7 +66,6 @@ body {
 
 @media screen and (min-width: 900px) {
   .right-section {
-    margin-top: -2.2rem;
     margin-left: 2rem;
     min-width: 48.75%;
   }
