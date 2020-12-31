@@ -1,55 +1,68 @@
-
-
+/* ********* ********* ********* *********
+                BODY
+   ********* ********* ********* **********/
+body {
+	padding: calc(50% - 80px / 2 - 73px) 0;
+	@include query-desktops {
+		padding: 0;
+	}
+}
 
 /* ********* ********* ********* *********
                 CONTAINER
    ********* ********* ********* **********/
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 90%;
-    margin: auto;
-    @include query-desktops{
-        margin-top: 8rem;
-        flex-direction: row;
-        width: 80%;
-    }
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 87.2%;
+	margin: auto;
+	@include query-desktops {
+		height: 89vh;
+		flex-direction: row;
+		width: 77.08%;
+	}
 }
 
-#offer-description{
-
-    text-align: center;
-    @include query-desktops{
-        text-align: left;
-    }
+.left-section {
+	text-align: center;
+	margin-bottom: 3rem;
+	@include query-desktops {
+		text-align: left;
+	}
 }
 
+.right-section {
+	@include query-desktops {
+		margin-top: -2.2rem;
+		margin-left: 2rem;
+		min-width: 48.75%;
+	}
+}
 
 /* ********* ********* ********* *********
                     FOOTER
    ********* ********* ********* **********/
-footer{
-    text-align: center;
-    color: white;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;    
-    width: 100%;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    font-weight: 400;
-    a{
-        color: white;
-        text-decoration-line: none;
-    }
+footer {
+	text-align: center;
+	color: white;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+	font-weight: 400;
+	a {
+		color: white;
+		text-decoration-line: none;
+	}
 }
 
-
-footer img.heart{
-    width: 20px;
-    display: inline-block;
-    vertical-align: bottom;
+footer img.heart {
+	width: 20px;
+	display: inline-block;
+	vertical-align: bottom;
 }

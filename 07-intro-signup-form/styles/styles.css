@@ -24,6 +24,18 @@ body {
 }
 
 /* ********* ********* ********* *********
+                BODY
+   ********* ********* ********* **********/
+body {
+  padding: calc(50% - 80px / 2 - 73px) 0;
+}
+@media screen and (min-width: 900px) {
+  body {
+    padding: 0;
+  }
+}
+
+/* ********* ********* ********* *********
                 CONTAINER
    ********* ********* ********* **********/
 .container {
@@ -31,23 +43,32 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 90%;
+  width: 87.2%;
   margin: auto;
 }
 @media screen and (min-width: 900px) {
   .container {
-    margin-top: 8rem;
+    height: 89vh;
     flex-direction: row;
-    width: 80%;
+    width: 77.08%;
   }
 }
 
-#offer-description {
+.left-section {
   text-align: center;
+  margin-bottom: 3rem;
 }
 @media screen and (min-width: 900px) {
-  #offer-description {
+  .left-section {
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .right-section {
+    margin-top: -2.2rem;
+    margin-left: 2rem;
+    min-width: 48.75%;
   }
 }
 
@@ -78,78 +99,156 @@ footer img.heart {
 }
 
 /* ********* ********* ********* *********
-                    FORM
+                    LEFT SECTION
    ********* ********* ********* **********/
+.main-title {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.291667px;
+}
 @media screen and (min-width: 900px) {
-  #form-section {
-    min-width: 50%;
-    max-width: 55%;
+  .main-title {
+    font-size: 3.125rem;
+    line-height: 3.4375rem;
+    letter-spacing: -0.520833px;
+    text-align: left;
   }
 }
 
-#form {
-  background: white;
+.main-description {
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+/* ********* ********* ********* *********
+                    FORM
+   ********* ********* ********* **********/
+#form-container {
+  background: #ffffff;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
   border-radius: 10px;
-  box-shadow: 0.1rem 0.2rem 0rem black;
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 @media screen and (min-width: 900px) {
-  #form {
-    padding: 1.3rem;
+  #form-container {
+    padding: 2.5rem;
   }
 }
-#form form {
+
+form {
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
-  box-sizing: border-box;
 }
-#form form input {
-  border-radius: 6px;
-  height: 2.8rem;
-  margin-bottom: 0.8rem;
-  border: 0.3px solid grey;
-  padding-left: 1rem;
+
+.form-input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #dedede;
+  background: white;
+  padding: 1.2rem 1.213rem;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  letter-spacing: 0.25px;
+}
+@media screen and (min-width: 900px) {
+  .form-input {
+    padding: 0.9375rem 2rem;
+    line-height: 1.625rem;
+  }
+}
+
+.form-control {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.form-control.error {
+  margin-bottom: 1.25rem;
+}
+.form-control.error .form-input {
+  border: 2px solid #ff7a7a;
+}
+.form-control.error .error-icon {
+  display: block;
+}
+.form-control.error small.error-message {
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  .form-control {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.form-control .error-icon {
+  position: absolute;
+  right: 1.6875rem;
+  top: 1rem;
+  display: none;
+}
+
+.form-control small.error-message {
+  position: absolute;
+  right: 0px;
+  bottom: -6px;
+  font-size: 0.6875rem;
+  font-style: italic;
+  display: none;
+  color: #ff7a7a;
+  margin: 0;
+  padding: 0;
 }
 
 /* ********* ********* ********* *********
                     BUTTONS
    ********* ********* ********* **********/
 .call-to-action {
-  background: violet;
-  border-radius: 5px;
-  padding: 1rem;
+  border: none;
   text-align: center;
-  margin: 2rem;
-  box-shadow: 0 8px 6px -6px black;
 }
 
-#main-cta {
-  margin: 2rem 0;
+.call-to-action.form-information {
+  border-radius: 10px;
+  background: violet;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  margin: 0 0 2rem 0;
   background: #6055a5;
+  font-size: 0.9375rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.27 px;
+  margin-bottom: 1.5rem;
+  padding: 1.125rem 4.125rem;
 }
 
-#form-submission {
-  margin-top: 0;
+#button-submit {
   background: #38cc8c;
-  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9375rem;
   font-weight: 600;
-  box-shadow: #38cc8c;
-  margin-bottom: 0;
+  line-height: 1.625rem;
+  margin-bottom: 0.5rem;
+  padding: 0.9375rem 2.75rem;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 #disclosure {
   color: #b9b6d3;
-  margin-top: 1.3rem;
-  font-size: 0.7rem;
-  font-weight: 600;
+  line-height: 21px;
+  padding: 0;
+  margin: 0;
+  font-size: 0.6875rem;
+  font-weight: 400;
 }
 #disclosure a {
   text-decoration-line: none;
   color: red;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,77 +1,147 @@
 /* ********* ********* ********* *********
+                    LEFT SECTION
+   ********* ********* ********* **********/
+.main-title {
+	font-size: 1.75rem;
+	line-height: 2.25rem;
+	letter-spacing: -0.291667px;
+	@include query-desktops {
+		font-size: 3.125rem;
+		line-height: 3.4375rem;
+		letter-spacing: -0.520833px;
+		text-align: left;
+	}
+}
+
+.main-description {
+	font-size: 1rem;
+	line-height: 1.625rem;
+}
+/* ********* ********* ********* *********
                     FORM
    ********* ********* ********* **********/
 
-#form-section{
-    @include query-desktops{
-        min-width: 50%;
-        max-width: 55%;
-    }
+#form-container {
+	background: #ffffff;
+	box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+	border-radius: 10px;
+	text-align: center;
+	padding: 1.5rem;
+	@include query-desktops {
+		padding: 2.5rem;
+	}
+}
+form {
+	display: flex;
+	flex-direction: column;
 }
 
-#form{
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0.1rem 0.2rem 0rem black;
-    text-align: center;
-    padding: 1rem;
-    @include query-desktops{
-        padding: 1.3rem;
-    }
-    form{
-        display: flex;
-        flex-direction: column;
-        padding: 1.5rem;
-        box-sizing: border-box;
-        input{
-            border-radius: 6px;
-            height: 2.8rem;
-            margin-bottom: 0.8rem;
-            border: 0.3px solid grey;
-            padding-left: 1rem;
-            font-weight: 600;
-            font-size: 0.9rem;
-            // width: 90%;
-            // margin: auto;
-        }
-    }
+.form-input {
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #dedede;
+	background: white;
+	padding: 1.2rem 1.213rem;
+	font-weight: 600;
+	font-size: 0.875rem;
+	box-sizing: border-box;
+	letter-spacing: 0.25px;
+
+	@include query-desktops {
+		padding: 0.9375rem 2rem;
+		line-height: 1.625rem;
+	}
 }
 
+.form-control {
+	position: relative;
+	margin-bottom: 1rem;
+
+	&.error {
+		margin-bottom: 1.25rem;
+		.form-input {
+			border: 2px solid $background;
+		}
+		.error-icon {
+			display: block;
+		}
+		small.error-message {
+			display: block;
+		}
+	}
+
+	@include query-desktops {
+		margin-bottom: 1.25rem;
+	}
+}
+
+.form-control .error-icon {
+	position: absolute;
+	right: 1.6875rem;
+	top: 1rem;
+	display: none;
+}
+
+.form-control small.error-message {
+	position: absolute;
+	right: 0px;
+	bottom: -6px;
+	font-size: 0.6875rem;
+	font-style: italic;
+	display: none;
+	color: $background;
+	margin: 0;
+	padding: 0;
+}
 /* ********* ********* ********* *********
                     BUTTONS
    ********* ********* ********* **********/
-.call-to-action{
-    background: violet;
-    border-radius: 5px;
-    padding: 1rem;
-    text-align: center;
-    margin: 2rem;
-    box-shadow: 0 8px 6px -6px black;
+.call-to-action {
+	border: none;
+	text-align: center;
 }
 
-#main-cta{
-    margin: 2rem 0;
-    background: $blue;
+.call-to-action.form-information {
+	border-radius: 10px;
+	background: violet;
+	box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+	margin: 0 0 2rem 0;
+	background: $blue;
+	font-size: 0.9375rem;
+	line-height: 1.625rem;
+	letter-spacing: 0.27 px;
+	margin-bottom: 1.5rem;
+	padding: 1.125rem 4.125rem;
 }
 
-#form-submission{
-    margin-top: 0;
-    background: $green;
-    text-transform: uppercase;
-    font-weight: 600;
-    box-shadow: $green;
-    margin-bottom: 0;
+#button-submit {
+	background: $green;
+	border-radius: 5px;
+	box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	font-size: 0.9375rem;
+	font-weight: 600;
+	line-height: 1.625rem;
+	margin-bottom: 0.5rem;
+	padding: 0.9375rem 2.75rem;
+	text-transform: uppercase;
+	width: 100%;
 }
 
-#disclosure{
-    a{
-        text-decoration-line: none;
-        color: red;
-    }
-    color: $grayish-blue;
-    margin-top: 1.3rem;
-    font: {
-        size: 0.7rem;
-        weight: 600;
-    }
+#disclosure {
+	a {
+		text-decoration-line: none;
+		color: red;
+		font-weight: 600;
+	}
+	color: $grayish-blue;
+	line-height: 21px;
+	padding: 0;
+	margin: 0;
+	font: {
+		size: 0.6875rem;
+		weight: 400;
+	}
 }
