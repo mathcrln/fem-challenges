@@ -3,9 +3,3 @@
 		@content;
 	}
 }
-
-@mixin query-mobile {
-	@media screen and (max-width: $mobile) {
-		@content;
-	}
-}
