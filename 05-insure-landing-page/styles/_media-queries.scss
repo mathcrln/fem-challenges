@@ -1,11 +1,11 @@
 @mixin query-desktops {
-    @media screen and (min-width: 900px) {
-        @content;
-    }
+	@media screen and (min-width: 880px) {
+		@content;
+	}
 }
 
 @mixin query-mobile {
-    @media screen and (max-width: $mobile) {
-        @content;
-    }
+	@media screen and (max-width: $mobile) {
+		@content;
+	}
 }

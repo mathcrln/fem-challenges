@@ -1,103 +1,132 @@
-.logo {
-    max-width: 100%;
+/* **************************************
+        LOGO
+************************************** */
+#main-logo {
+	text-align: left;
+	cursor: pointer;
 }
 
-// #main-logo {
-//     max-width: 30%;
-//     background: red;
-// }
+/* **************************************
+        IMAGES
+************************************** */
+img {
+	max-width: 100%;
+}
 
+/* **************************************
+    Heading, paragraphs and texts
+************************************** */
 .heading {
-    font-family: $heading-font;
+	font-family: $heading-font;
 }
 
+.heading--1,
+.heading--2 {
+	font-size: 3rem;
+	line-height: 3rem;
+	letter-spacing: -0.666667px;
+	font-weight: normal;
+
+	@include query-desktops {
+		font-size: 4.5rem;
+		line-height: 4rem;
+	}
+}
+
+/* **************************************
+    Buttons and clickabke items
+************************************** */
 .button {
-    background: none;
-    border-style: solid;
-    border-width: 0.1rem;
-    padding: 0.6rem 2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
+	display: block;
+	border-style: solid;
+	border-width: 1.5px;
+	box-sizing: content-box;
+	background: none;
+	cursor: pointer;
+	font-size: 0.8125rem;
+	line-height: 9px;
+	letter-spacing: 0.7px;
+	font-weight: bold;
+	padding: 0.8125rem 1.78rem;
+	text-transform: uppercase;
 }
 
-.main-cta {
-    border-color: black;
+.button:hover {
+	background: $dark-violet;
+	color: white;
 }
 
+.dark-background .button {
+	border-color: white;
+	color: white;
+}
+
+.dark-background .button:hover {
+	background: white;
+	color: $dark-violet;
+}
+
+/* **************************************
+    Find out more (banner)
+************************************** */
 .banner.find-out-more {
-    background: url('../assets/images/bg-pattern-how-we-work-desktop.svg') $dark-violet no-repeat;
-    background-size: contain;
-    background-position: right;
-    color: white;
-    padding: 4rem 5rem;
-    margin: 7rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	background: url('../assets/images/bg-pattern-how-we-work-desktop.svg')
+		$dark-violet no-repeat;
+	background-size: contain;
+	background-position: right;
+	color: white;
+	padding: 4rem 5rem;
+	margin: 7rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
-    .heading {
-        font-size: 4rem;
-        line-height: 3.8rem;
-        flex-grow: 1;
+	.heading {
+		font-size: 4rem;
+		line-height: 3.8rem;
+		flex-grow: 1;
+	}
 
-    }
+	@include query-mobile {
+		flex-direction: column;
+		background: url('../assets/images/bg-pattern-how-we-work-mobile.svg')
+			$dark-violet no-repeat;
+		background-size: contain;
+		background-position: right;
+		padding: 4rem 4rem;
 
-    .secondary-button {
-        font-size: 1.3rem;
-    }
+		.heading {
+			font-size: 2.5rem;
+			line-height: 3rem;
+		}
 
-    .secondary-button:hover {
-        background: white;
-        color: black;
-    }
-
-    @include query-mobile {
-        flex-direction: column;
-        background: url('../assets/images/bg-pattern-how-we-work-mobile.svg') $dark-violet no-repeat;
-        background-size: contain;
-        background-position: right;
-        padding: 4rem 4rem;
-
-        .heading {
-            font-size: 2.5rem;
-            line-height: 3rem;
-
-        }
-
-        .secondary-button {
-            margin-top: 2rem;
-        }
-    }
-
+		.secondary-button {
+			margin-top: 2rem;
+		}
+	}
 }
 
-.secondary-button {
-    border-color: white;
-    color: white;
-}
-
-.main-cta {
-    color: $very-dark-violet;
-}
-
-
-
-// div.footer-social-icons {}
+/* **************************************
+    Footer elements, titles & icons
+************************************** */
 .social-icon {
-    color: $dark-grayish-violet;
-    margin-left: 0.5rem;
+	color: $dark-grayish-violet;
+	margin-left: 0.5rem;
 }
 
 .footer-nav-title {
-    text-transform: uppercase;
-    color: $dark-grayish-violet;
-    margin-bottom: 1.7rem;
+	text-transform: uppercase;
+	color: $dark-grayish-violet;
+	margin-bottom: 1.7rem;
 }
 
-hr {
-    height: 1px;
-    background-color: gray;
-    border: none;
-    margin: 1rem 0;
+.divider {
+	height: 1px;
+	background-color: gray;
+	border: none;
+	margin: 0;
+	width: 9.375rem;
+	@include query-mobile {
+		margin: auto;
+	}
 }
