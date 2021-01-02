@@ -316,7 +316,7 @@ img {
   display: block;
   border-style: solid;
   border-width: 1.5px;
-  box-sizing: content-box;
+  box-sizing: border-box;
   background: none;
   cursor: pointer;
   font-size: 0.8125rem;
