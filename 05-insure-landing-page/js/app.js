@@ -1,12 +1,3 @@
-// function toggleMenu() {
-// 	const button = document.getElementById('top-menu').firstElementChild;
-// 	if (button.style.display === 'flex') {
-// 		button.style.display = 'none';
-// 	} else {
-// 		button.style.display = 'flex';
-// 	}
-// }
-
 const menuButton = document.getElementById('menu-toggle');
 
 menuButton.addEventListener('click', function (e) {

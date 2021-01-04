@@ -70,38 +70,38 @@ img {
     Find out more (banner)
 ************************************** */
 .banner.find-out-more {
-	background: url('../assets/images/bg-pattern-how-we-work-desktop.svg')
+	background: url('../assets/images/bg-pattern-how-we-work-mobile.svg')
 		$dark-violet no-repeat;
 	background-size: contain;
 	background-position: right;
 	color: white;
-	padding: 4rem 5rem;
+	padding: 4rem 4rem;
 	margin: 7rem 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-direction: column;
 
 	.heading {
-		font-size: 4rem;
-		line-height: 3.8rem;
-		flex-grow: 1;
+		font-size: 2.5rem;
+		line-height: 3rem;
 	}
 
-	@include query-mobile {
-		flex-direction: column;
-		background: url('../assets/images/bg-pattern-how-we-work-mobile.svg')
+	.secondary-button {
+		margin-top: 2rem;
+	}
+	@include query-desktops {
+		flex-direction: row;
+		background: url('../assets/images/bg-pattern-how-we-work-desktop.svg')
 			$dark-violet no-repeat;
 		background-size: contain;
 		background-position: right;
-		padding: 4rem 4rem;
+		padding: 4rem 5rem;
 
 		.heading {
-			font-size: 2.5rem;
-			line-height: 3rem;
-		}
-
-		.secondary-button {
-			margin-top: 2rem;
+			font-size: 4rem;
+			line-height: 3.8rem;
+			flex-grow: 1;
 		}
 	}
 }
@@ -124,9 +124,9 @@ img {
 	height: 1px;
 	background-color: gray;
 	border: none;
-	margin: 0;
+	margin: auto;
 	width: 9.375rem;
-	@include query-mobile {
-		margin: auto;
+	@include query-desktops {
+		margin: initial;
 	}
 }
