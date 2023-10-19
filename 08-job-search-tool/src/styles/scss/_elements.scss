@@ -1,0 +1,24 @@
+@import 'rem-func';
+
+.flag--new,
+.flag--featured {
+    align-self: center;
+    border-radius: rem(26px);
+    color: white;
+    font: {
+        size: rem(11.5px);
+        weight: 700;
+    }
+    margin: 0 rem(5px);
+    max-width: rem(96px);
+    padding: rem(8px) rem(9px) rem(4px);
+    text-align: center;
+}
+
+.flag--featured {
+    background: $veryDarkCyan;
+}
+
+.flag--new {
+    background: $bg;
+}

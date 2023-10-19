@@ -4,6 +4,12 @@ Suite of responsive front-end challenges from [frontendmentor.io](https://www.fr
 
 ## List of challenges
 
+### Challenge 8 • Job Search Tool• [See Live!](https://mathcrln.github.io/fem-challenges/08-job-search-tool)
+**[February 28, 2022]** A simple application showing a job list. [Read Code](https://github.com/mathcrln/fem-challenges/tree/master/08-job-search-tool).
+
+![Job Search Tool](https://mathcrln.github.io/fem-challenges/08-job-search-tool/design/desktop-preview.webp)
+---
+
 ### Challenge 7 • Intro Sign Up Form • [See Live!](https://mathcrln.github.io/fem-challenges/07-intro-signup-form)
 **[November 11, 2020]** Simple Sign Up form including validation, with Flex and SASS. [Read Code](https://github.com/mathcrln/fem-challenges/tree/master/07-intro-signup-form).
 
